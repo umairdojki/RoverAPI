@@ -27,7 +27,7 @@ namespace RoverAPITests
             _commandCentre = new CommandCentre(_rover, grid);
 
             // when
-            var roverPosition = _commandCentre.IssueCommandsToRover(commands);
+            var roverPosition = _commandCentre.NavigateRover(commands);
 
             // then
             var newPosition = new Position(newX, newY, newDirection);
@@ -46,7 +46,7 @@ namespace RoverAPITests
             _commandCentre = new CommandCentre(_rover, grid);
 
             // when
-            var roverPosition = _commandCentre.IssueCommandsToRover(commands);
+            var roverPosition = _commandCentre.NavigateRover(commands);
 
             // then
             var newPosition = new Position(newX, newY, newDirection);

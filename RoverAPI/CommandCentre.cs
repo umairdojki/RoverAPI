@@ -11,7 +11,7 @@
             _grid = grid;
         }
 
-        public Position IssueCommandsToRover(string commands)
+        public Position NavigateRover(string commands)
         {
             foreach (var command in commands.ToCharArray())
             {
